@@ -1,0 +1,1 @@
+# Muzifay project bundle\n\nSee mobile/, backend/, ai/ for components.
