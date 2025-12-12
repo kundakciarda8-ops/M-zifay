@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "654238135020",
+    "project_id": "muzifay",
+    "storage_bucket": "muzifay.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654238135020:android:467da88c20494a5bb92bc9",
+        "android_client_info": {
+          "package_name": "Com.muzifay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtuZNr63UrVcIou475MSIp44_Xicboa54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654238135020:android:a31929d8d5916024b92bc9",
+        "android_client_info": {
+          "package_name": "Com.muzifay.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtuZNr63UrVcIou475MSIp44_Xicboa54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
