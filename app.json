@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Muzifay",
-    "slug": "muzifay",
+    "slug": "muzifay-offical",
     "version": "1.0.0",
     "platforms": ["ios", "android"],
     "android": {
