@@ -5,7 +5,6 @@ import Home from './Home';
 import Explore from './Explore';
 import AIDJ from './AIDJ';
 import Library from './Library';
-import Profile from './Profile';
 import Player from './Player';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
@@ -15,13 +14,14 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown:false }}>
-          <Stack.Screen name="Home" component={Home}/>
-          <Stack.Screen name="Explore" component={Explore}/>
-          <Stack.Screen name="AIDJ" component={AIDJ}/>
-          <Stack.Screen name="Library" component={Library}/>
-          <Stack.Screen name="Profile" component={Profile}/>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Explore" component={Explore} />
+          <Stack.Screen name="AIDJ" component={AIDJ} />
+          <Stack.Screen name="Library" component={Library} />
         </Stack.Navigator>
+
+        {/* Player her sayfada görünmesi için en alta bırakıldı */}
         <Player />
       </NavigationContainer>
     </SafeAreaProvider>
