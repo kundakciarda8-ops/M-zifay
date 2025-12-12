@@ -1,24 +1,34 @@
 {
-  "package": "com.muzifay.app",
-  "versionCode": 1,
-  "config": {
-    "googleMaps": {
-      "apiKey": "EXAMPLE-MAPS-KEY"
+  "expo": {
+    "name": "Muzifay",
+    "slug": "muzifay",
+    "version": "1.0.0",
+    "platforms": ["ios", "android"],
+    "android": {
+      "package": "com.muzifay.app",
+      "versionCode": 1,
+      "googleServicesFile": "./android/google-services.json",
+      "config": {
+        "googleMaps": {
+          "apiKey": "EXAMPLE-MAPS-KEY"
+        }
+      },
+      "signingConfig": {
+        "keystorePath": "./android/my-release-key.jks",
+        "keystorePassword": "Atalay4511",
+        "keyAlias": "Muzifaykey",
+        "keyPassword": "Atalay4511"
+      }
     },
-    "keystore": {
-      "keystorePath": "./android/my-release-key.jks",
-      "keystorePassword": "Atalay4511",
-      "keyAlias": "Muzifaykey",
-      "keyPassword": "Atalay4511"
-    }
-  },
-  "ios": {
-    "bundleIdentifier": "com.muzifay.app",
-    "supportsTablet": false
-  },
-  "extra": {
-    "eas": {
-      "projectId": "144aba66-f2ab-4e35-9fcf-a02d7b961925"
+    "ios": {
+      "bundleIdentifier": "com.muzifay.app",
+      "supportsTablet": false,
+      "googleServicesFile": "./ios/GoogleService-Info.plist"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "144aba66-f2ab-4e35-9fcf-a02d7b961925"
+      }
     }
   }
 }
