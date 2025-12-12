@@ -5,9 +5,9 @@
   },
   "build": {
     "production": {
+      "credentialsSource": "remote",
       "android": {
-        "buildType": "app-bundle",
-        "credentialsSource": "remote"
+        "buildType": "app-bundle"
       }
     }
   }
