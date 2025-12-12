@@ -11,13 +11,6 @@
         "googleMaps": {
           "apiKey": "EXAMPLE-MAPS-KEY"
         }
-      },
-      "signingConfig": {
-        "keystorePath": "./android/my-release-key.jks",
-        "keystorePassword": "Atalay4511",
-        "keyAlias": "Muzifaykey",
-        "keyPassword": "Atalay4511"
-      }
     },
     "ios": {
       "bundleIdentifier": "com.muzifay.app",
