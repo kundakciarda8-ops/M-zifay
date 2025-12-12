@@ -1,22 +1,21 @@
 {
   "name": "muzifay-mobile",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "build:android": "eas build --platform android"
   },
   "dependencies": {
-    "expo": "~48.0.0",
+    "expo": "~48.0.21",
     "expo-av": "^13.1.0",
     "expo-file-system": "~15.0.0",
     "expo-secure-store": "~12.0.0",
     "axios": "^1.4.0",
     "react": "18.2.0",
-    "react-native": "0.71.0",
+    "react-native": "0.71.14",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
     "react-native-gesture-handler": "~2.9.0",
@@ -24,7 +23,12 @@
     "react-native-track-player": "^2.1.2",
     "socket.io-client": "^4.7.2",
     "zustand": "^4.4.0",
-    "nativewind": "^2.0.11"
+    "nativewind": "^2.0.11",
+    "expo-splash-screen": "~0.18.2",
+    "expo-status-bar": "~1.4.4"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  }
 }
