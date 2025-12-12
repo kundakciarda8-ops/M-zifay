@@ -1,35 +1,24 @@
-i
-
-      "package": "com.muzifay.app",
-      "versionCode": 1,
-      "config": {
-        "googleMaps": {
-          "apiKey": "EXAMPLE-MAPS-KEY"
-        },
-        "keystore": {
-          "keystorePath": "./android/my-release-key.jks",
-          "keystorePassword": “Atalay4511",
-          "keyAlias": "Muzifaykey",
-          "keyPassword": "Atalay4511”
-
-
-
-
-
-
-D"
-        }
-      }
+{
+  "package": "com.muzifay.app",
+  "versionCode": 1,
+  "config": {
+    "googleMaps": {
+      "apiKey": "EXAMPLE-MAPS-KEY"
     },
-
-    "ios": {
-      "bundleIdentifier": "com.muzifay.app",
-      "supportsTablet": false
-    },
-
-    "extra": {
-      "eas": {
-        "projectId": "144aba66-f2ab-4e35-9fcf-a02d7b961925"
-      }
+    "keystore": {
+      "keystorePath": "./android/my-release-key.jks",
+      "keystorePassword": "Atalay4511",
+      "keyAlias": "Muzifaykey",
+      "keyPassword": "Atalay4511"
     }
-  
+  },
+  "ios": {
+    "bundleIdentifier": "com.muzifay.app",
+    "supportsTablet": false
+  },
+  "extra": {
+    "eas": {
+      "projectId": "144aba66-f2ab-4e35-9fcf-a02d7b961925"
+    }
+  }
+}
