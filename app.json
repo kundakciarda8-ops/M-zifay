@@ -6,7 +6,6 @@
     "platforms": ["ios", "android"],
     "android": {
       "package": "com.muzifay.app",
-      "versionCode": 1,
       "googleServicesFile": "./android/google-services.json",
       "config": {
         "googleMaps": {
