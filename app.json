@@ -11,6 +11,7 @@
         "googleMaps": {
           "apiKey": "EXAMPLE-MAPS-KEY"
         }
+      }
     },
     "ios": {
       "bundleIdentifier": "com.muzifay.app",
