@@ -1,33 +1,49 @@
-import React, {useEffect, useState} from 'react';
-import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
-import api from '../services/api';
+import React from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {
-  const [trending, setTrending] = useState([]);
-
-  useEffect(()=>{ fetchTrending(); },[]);
-
-  async function fetchTrending(){
-    try {
-      const res = await api.get('/tracks/trending');
-      setTrending(res.data);
-    } catch(e) { console.warn(e.message); }
-  }
+  const navigation = useNavigation();
 
   return (
-    <ScrollView style={{flex:1,backgroundColor:'#000',padding:16}}>
-      <Text style={{color:'#9B5CFF',fontSize:26,fontWeight:'700'}}>Müzifay</Text>
-      <Text style={{color:'#aaa',marginTop:6}}>Kişisel öneriler & AI Mix'ler</Text>
+    <View style={{ flex: 1, backgroundColor: '#000', padding: 16 }}>
+      <Text style={{ color: '#fff', fontSize: 24, fontWeight: 'bold' }}>Ana Sayfa</Text>
+      
+      <TouchableOpacity 
+        onPress={() => navigation.navigate('Explore')}
+        style={{ 
+          backgroundColor: '#9B5CFF', 
+          padding: 16, 
+          borderRadius: 8, 
+          marginTop: 20 
+        }}
+      >
+        <Text style={{ color: '#fff', textAlign: 'center' }}>Keşfet'e Git</Text>
+      </TouchableOpacity>
 
-      <View style={{marginTop:18}}>
-        <Text style={{color:'#fff',fontWeight:'700'}}>Trendler</Text>
-        {trending.map(t => (
-          <TouchableOpacity key={t._id} style={{padding:10,marginTop:8,backgroundColor:'#0b0b0d',borderRadius:10}}>
-            <Text style={{color:'#fff',fontWeight:'600'}}>{t.title}</Text>
-            <Text style={{color:'#888'}}>{t.artist}</Text>
-          </TouchableOpacity>
-        ))}
-      </View>
-    </ScrollView>
+      <TouchableOpacity 
+        onPress={() => navigation.navigate('AIDJ')}
+        style={{ 
+          backgroundColor: '#333', 
+          padding: 16, 
+          borderRadius: 8, 
+          marginTop: 10 
+        }}
+      >
+        <Text style={{ color: '#fff', textAlign: 'center' }}>AI DJ</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity 
+        onPress={() => navigation.navigate('Library')}
+        style={{ 
+          backgroundColor: '#333', 
+          padding: 16, 
+          borderRadius: 8, 
+          marginTop: 10 
+        }}
+      >
+        <Text style={{ color: '#fff', textAlign: 'center' }}>Kütüphane</Text>
+      </TouchableOpacity>
+    </View>
   );
 }
