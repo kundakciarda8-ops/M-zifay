@@ -7,7 +7,7 @@
     "production": {
       "credentialsSource": "remote",
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "apk"
       }
     }
   }
