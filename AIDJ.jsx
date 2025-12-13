@@ -1,12 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import { View, Text } from 'react-native';
 
-export default function AIDJ(){
-  const [status,setStatus] = useState('Bağlanmadı');
-
-  useEffect(()=>{
-    // WebSocket bağlanması backend'de hazırsa buraya ekle
-  },[]);
+export default function AIDJ() {
+  const [status, setStatus] = useState('Bağlanmadı');
 
   return (
     <View style={{flex:1,backgroundColor:'#000',padding:16}}>
