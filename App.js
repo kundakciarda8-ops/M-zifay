@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from './Home';
-import Explore from './Explore';
-import AIDJ from './AIDJ';
-import Library from './Library';
-import Player from './Player';
+import Home from './Home.jsx';
+import Explore from './Explore.jsx';
+import AIDJ from './AIDJ.jsx';
+import Library from './Library.jsx';
+import Player from './Player.jsx';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { View } from 'react-native';
 
@@ -23,7 +23,6 @@ export default function App() {
             <Stack.Screen name="Library" component={Library} />
           </Stack.Navigator>
           
-          {/* Player sabit alt component olarak */}
           <Player />
         </View>
       </NavigationContainer>
