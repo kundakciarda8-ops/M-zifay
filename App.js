@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from './src/screens/Home';
-import Explore from './src/screens/Explore';
-import AIDJ from './src/screens/AIDJ';
-import Library from './src/screens/Library';
-import Profile from './src/screens/Profile';
-import Player from './src/components/Player';
+import Home from './Home';
+import Explore from './Explore';
+import AIDJ from './AIDJ';
+import Library from './Library';
+import Profile from './Profile';
+import Player from './Player';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const Stack = createNativeStackNavigator();
