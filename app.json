@@ -4,10 +4,7 @@
     "slug": "muzifay-offical",
     "version": "1.0.0",
     "orientation": "portrait",
-    "platforms": [
-      "ios",
-      "android"
-    ],
+    "platforms": ["ios", "android"],
     "icon": "./icon.png",
     "splash": {
       "image": "./splash.png",
@@ -17,12 +14,10 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "android": {
       "package": "com.muzifay.app",
-      "googleServicesFile": "./android/google-services.json",
+      "googleServicesFile": "./android/app/google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./icon.png",
         "backgroundColor": "#050505"
