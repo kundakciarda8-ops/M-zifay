@@ -3,22 +3,41 @@
     "name": "Muzifay",
     "slug": "muzifay-offical",
     "version": "1.0.0",
-    "platforms": ["ios", "android"],
-
+    "orientation": "portrait",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "icon": "./icon.png",
+    "splash": {
+      "image": "./splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#050505"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "android": {
       "package": "com.muzifay.app",
-      "googleServicesFile": "./google-services.json"
+      "googleServicesFile": "./android/google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./icon.png",
+        "backgroundColor": "#050505"
+      }
     },
-
     "ios": {
       "bundleIdentifier": "com.muzifay.app",
-      "supportsTablet": false
+      "supportsTablet": false,
+      "googleServicesFile": "./ios/GoogleService-Info.plist"
     },
-
     "extra": {
       "eas": {
-        "projectId": "144aba66-f2ab-4e35-9fcf-a02d7b96"
+        "projectId": "144aba66-f2ab-4e35-9fcf-a02d7b961925"
       }
-    }
+    },
+    "owner": "ismaildomaltan"
   }
 }
