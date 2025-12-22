@@ -4,29 +4,20 @@
     "slug": "muzifay-offical",
     "version": "1.0.0",
     "platforms": ["ios", "android"],
+
     "android": {
       "package": "com.muzifay.app",
-      "googleServicesFile": "./android/google-services.json",
-      "config": {
-        "googleMaps": {
-          "apiKey": "EXAMPLE-MAPS-KEY"
-        }
-      },
-      "signingConfig": {
-        "keystorePath": "./android/my-release-key.jks",
-        "keystorePassword": "Atalay4511",
-        "keyAlias": "Muzifaykey",
-        "keyPassword": "Atalay4511"
-      }
+      "googleServicesFile": "./google-services.json"
     },
+
     "ios": {
       "bundleIdentifier": "com.muzifay.app",
-      "supportsTablet": false,
-      "googleServicesFile": "./ios/GoogleService-Info.plist"
+      "supportsTablet": false
     },
+
     "extra": {
       "eas": {
-        "projectId": "144aba66-f2ab-4e35-9fcf-a02d7b961925"
+        "projectId": "144aba66-f2ab-4e35-9fcf-a02d7b96"
       }
     }
   }
